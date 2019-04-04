@@ -1,0 +1,42 @@
+@import './default.less';
+@import './loading.less';
+.container{
+    display: flex;
+    .nav-left{
+        background-color:#001529;
+        color: #ffffff;
+        height: calc(100vh);
+   
+    }
+
+    .main{
+        flex: 1;
+        background-color:@colorL ;
+       // height: calc(100vh);
+        
+
+    }
+    .content{
+        position: relative;
+        padding: 15px;
+        height: calc(100vh - 105px);
+        overflow-y:auto;
+    }
+}
+
+.operate-wrap{
+    margin-top: 5px;
+    button{
+        margin-right: 10px
+    }
+}
+
+.content-wrap{
+    background: #ffffff;
+    border: 1px solid #e8e8e8;
+    margin-top: -3px;
+    .ant-table-wrapper{
+        margin-left: -1px;
+        margin-right: -2px;
+    }
+}
